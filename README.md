@@ -45,6 +45,8 @@
 
 + 使用已有的虚拟硬盘文件 - 「注册」新虚拟硬盘文件选择刚才转换生成的 `openwrt-x86-64-combined-squashfs.vdi`文件
 
+  ![](image/virtualbox.PNG)
+
 #### VirtualBox 设置
 
 + 虚拟网卡设置
@@ -182,7 +184,7 @@
 
 - 配置DHCP和禁用DHCP
 
-  
+  <img src="image/DHCP-config.png" style="zoom:60%;" /><img src="image/DHCP-disable.png" style="zoom:60%;" />
 
 - 开启路由器/AP的日志记录功能（对指定事件记录）
 
@@ -202,11 +204,7 @@
 
   **WPS（Wi-Fi Protected Setup，WiFi保护设置），是由WiFi联盟组织实施的认证项目，其主要目的是用来简化无线网络的安全加密配置。WPS技术用来协助用户自动设置网络名（SSID）、配置最高级别的WPA2安全密钥**
 
-  
-
-  
-
-  
+  根据此[网页](https://forum.openwrt.org/t/wps-on-off-in-luci/1046)中所提示的，在LuCi页面的`Network>Wireless>Wireless Security`下没有直接找到WPS功能开启处诶。。。
 
 - 查看AP/无线路由器支持哪些工作模式
 
@@ -218,15 +216,23 @@
 
   + 解决方法：根据[官网](https://openwrt.org/zh/docs/guide-user/virtualization/virtualbox-vm)的提示,使用语句`dd if=openwrt-x86-64-combined-squashfs.img of=openWrt.img bs=128000 conv=sync`整合镜像，再次进行转换
 
-+ 插入无线网卡后本机和虚拟机均无反应，识别不到设备
++ 关于虚拟机识别网卡的一点插曲
 
-  解决方法：
+  问题：插入无线网卡后在本机和虚拟机均无法识别到该网卡
 
-  + 在本机查看该设备，发现本机驱动程序无法使用
+  解决步骤：
+
+  + 在本机查看该设备，发现本机驱动程序无法使用（以为这是问题所在）
 
     ![](image/driver.png)
 
-  + 通过其他能识别该设备的电脑获取设备信息后，在网络上搜索`Netgear WNA1100`,发现[NETGEAR官网](https://www.netgear.com/support/download/?model=WNA1100)提供了驱动，按照提示下载后，本机和虚拟机都能识别到该网卡设备了
+  + 通过其他能识别该设备的电脑获取设备信息后，在网络上搜索`Netgear WNA1100`,发现[NETGEAR官网](https://www.netgear.com/support/download/?model=WNA1100)提供了驱动，按照提示下载驱动，本机能够识别该USB设备了
+
+  + 准备再次打开虚拟机进行尝试时，在虚拟机的USB设备管理界面，突然想起来老师操作时有一步是将网卡注册到设备列表内（这样每次插入网卡都能使USB设备首先被虚拟机识别到），注册好后打开虚拟机发现网卡已经能够被识别
+
+  + 后来想了一下，USB设备在虚拟机中能否识别好像和本机能否识别驱动没什么关系吧？于是通过控制变量法测试了一下，发现在删除本机驱动、保留虚拟机USB设备列表内的网卡信息时，网卡仍能被虚拟机识别到，所以问题所在是USB设备筛选器
+
+    <img src="image/USBconfig.png" style="zoom:60%;" />
 
     
 
@@ -234,6 +240,6 @@
 
 + [在Virtualbox虚拟机中运行OpenWrt](https://openwrt.org/zh/docs/guide-user/virtualization/virtualbox-vm)
 
-+ [[WPS ON/OFF in LuCI?](https://forum.openwrt.org/t/wps-on-off-in-luci/1046)](https://forum.openwrt.org/t/wps-on-off-in-luci/1046)
++ [WPS ON/OFF in LuCI?](https://forum.openwrt.org/t/wps-on-off-in-luci/1046)
 
 + [NETGEAR](https://www.netgear.com/support/download/?model=WNA1100)
