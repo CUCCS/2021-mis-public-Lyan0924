@@ -1,6 +1,6 @@
 # 第五章实验—— Android模拟器环境搭建
 
-### 实验内容
+## 实验内容
 
 - [x] 安装和配置Java SDK
 
@@ -14,15 +14,15 @@
 
   
 
-### 实验环境
+## 实验环境
 
 - Windows10
 
   
 
-### 实验步骤
+## 实验步骤
 
-##### 安装和配置Java SDK
+#### 安装和配置Java SDK
 
 + 在[官网](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)找到对应版本的JDK下载
 
@@ -50,13 +50,13 @@
 
 
 
-##### 安装Android Studio
+#### 安装Android Studio
 
 通过官方网站下载[Android Studio](https://developer.android.com/studio/) 最新版本并根据提示安装
 
 ![](image/AS_setup.png)
 
-+ 下载安装Android SDK
+#### 下载安装Android SDK
 
   启动 Android Studio 之后进入菜单选项 Configure -> SDK Manager，默认安装11.0版本的Android SDK
 
@@ -64,7 +64,7 @@
 
 
 
-##### 配置Android模拟器运行环境
+#### 配置Android模拟器运行环境
 
 在SDK tool界面勾选Intel x86 Emulator Accelerator (HAXM installer)一项
 
@@ -72,7 +72,7 @@
 
 
 
-##### 配置Gradle编译环境
+#### 配置Gradle编译环境
 
 新建一个Test项目
 
@@ -88,7 +88,7 @@
 
 
 
-##### 运行测试项目
+#### 运行测试项目
 
 运行一下测试项目
 
@@ -98,7 +98,7 @@
 
 
 
-### 实验参考
+## 实验参考
 
 + [移动互联网安全课本](https://c4pr1c3.github.io/cuc-mis/chap0x05/exp.html)
 + [Android Studio安装配置详细步骤](https://blog.csdn.net/weixin_43883917/article/details/108942788)
