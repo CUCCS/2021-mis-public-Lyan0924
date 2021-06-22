@@ -22,7 +22,7 @@
 
   点击运行
 
-  ![](image/run-simple.mov)
+  ![](image/run-simple.gif)
 
 + 根据需求调整页面内容布局
 
@@ -46,7 +46,7 @@
 
   + 运行应用
 
-    ![](image/run-skip.mov)
+    ![](image/run-skip.gif)
 
 #### Hello World v2
 
@@ -59,7 +59,7 @@
 
 运行效果
 
-![](image/run-register.mov)
+![](image/run-register.gif)
 
 ### 思考题
 

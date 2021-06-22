@@ -61,7 +61,7 @@ adb shell am start -a android.intent.action.SENDTO -d sms:10086 --es sms_body ye
 
 在命令行中启动浏览器示例：
 
-<img src="image/am.mov"  />
+<img src="image/am.gif"  />
 =======
 
 
