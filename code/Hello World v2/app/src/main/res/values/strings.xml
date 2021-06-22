@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MISDemo</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="pref_filename">UserConfig</string>
+    <string name="pref_usr_input_msg">name</string>
+    <string name="register_ok">注册成功</string>
+    <string name="register_failed">注册失败</string>
+</resources>
