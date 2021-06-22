@@ -22,7 +22,7 @@
 
   点击运行
 
-  ![](image/run-simple.gif)
+  ![](image/run-simple.mov)
 
 + 根据需求调整页面内容布局
 
@@ -46,7 +46,7 @@
 
   + 运行应用
 
-    ![](image/run-skip.gif)
+    ![](image/run-skip.mov)
 
 #### Hello World v2
 
@@ -59,7 +59,7 @@
 
 运行效果
 
-![](image/run-register.gif)
+![](image/run-register.mov)
 
 ### 思考题
 
@@ -89,7 +89,7 @@
 
 ### 实验问题
 
-+ **问题描述**：在使用AVD Manager内创建的模拟器时，模拟器一直处于离线状态（由于我的电脑是m1芯片，只能下载API为arm64的模拟器镜像）
++ **问题描述**：在使用AVD Manager内创建的模拟器时，模拟器一直处于离线状态（由于我的电脑是m1芯片，只能下载ABI为arm64的模拟器镜像）
 
   ![](image/emulator.jpg)
 
@@ -99,7 +99,7 @@
 
   + 看到有[博客](https://blog.csdn.net/qq_36252342/article/details/80908414)说尝试开一下模拟器的USB调试模式，于是按照[官方文档](https://developer.android.google.cn/training/basics/firstapp/running-app)中所描述的真机启用USB调试过程，在模拟器中执行了一下，但是点按版本号七次后并没有出现开发者选项，而是进入了如下界面
 
-    <img src="image/USBdriver.jpg" style="zoom:33%;" />
+    <img src="image/USBdriver.jpg" style="zoom:10%;" />
 
     由于该镜像版本是最新版本的Androids 12，在网上没查到该版本启用USB调试功能的方法，只知道如上界面是一个彩蛋。。。🥺
 
