@@ -61,7 +61,8 @@ adb shell am start -a android.intent.action.SENDTO -d sms:10086 --es sms_body ye
 
 在命令行中启动浏览器示例：
 
-<img src="image/am.mov" style="zoom: 67%;" />
+<img src="image/am.mov"  />
+=======
 
 
 
@@ -87,7 +88,7 @@ adb shell am start -a android.intent.action.SENDTO -d sms:10086 --es sms_body ye
 
 + adb:command not found
 
-  解决：需要在终端配置一下环境变量，[参考](https://blog.csdn.net/ancientear/article/details/81214533)
+  解决：需要在终端配置一下环境变量
 
   + 在Android Studio的SDK Manager中查看sdk路径
 
