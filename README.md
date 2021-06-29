@@ -76,7 +76,7 @@
 
   + apksigner（Android Studio自带）
 
-  + Android SDK（Android Studio自带，配置过程第六章[实验报告](https://github.com/CUCCS/2021-mis-public-Lyan0924/chap0x06/README.md)中已记录）
+  + Android SDK（Android Studio自带，配置过程第六章[实验报告](https://github.com/CUCCS/2021-mis-public-Lyan0924/blob/chap0x06/ADB实验.md)中已记录）
 
     
 
