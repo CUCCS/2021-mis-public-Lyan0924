@@ -40,7 +40,7 @@
   + 安装pip2
 
     ```
-  curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
     
     sudo python2 get-pip.py
     
@@ -76,7 +76,7 @@
 
   + apksigner（Android Studio自带）
 
-  + Android SDK（Android Studio自带）
+  + Android SDK（Android Studio自带，配置过程第六章[实验报告](https://github.com/CUCCS/2021-mis-public-Lyan0924/chap0x06/README.md)中已记录）
 
     
 
@@ -265,10 +265,6 @@
 
   `adb uninstall com.android.insecurebankv2`
 
-### 实验总结
-
-反正就是不断在改环境配置。。
-
 
 
 ## 实验参考
@@ -276,7 +272,6 @@
 + [课本](https://c4pr1c3.github.io/cuc-mis/chap0x06/exp.html)
 + [mac安装pip2](https://blog.csdn.net/weixin_43376075/article/details/115375141)
 + [android-emulator-m1-preview](https://github.com/google/android-emulator-m1-preview)
-
 + [Android-InsecureBankv2](https://github.com/c4pr1c3/Android-InsecureBankv2)
 + [JADX decompiler](https://github.com/skylot/jadx)
 + [dex2jar](https://sourceforge.net/projects/dex2jar/files/latest/download)
